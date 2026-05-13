@@ -56,12 +56,18 @@ st.markdown(
         color: var(--text-main);
     }
     html, body {
-        height: 100%;
-        overflow-y: auto;
+        height: auto;
+        min-height: 100%;
+        overflow-y: auto !important;
+        overscroll-behavior-y: auto;
     }
+    .stApp,
     div[data-testid="stAppViewContainer"],
-    section.main {
-        overflow-y: auto;
+    section.main,
+    .block-container {
+        height: auto;
+        min-height: 100%;
+        overflow-y: auto !important;
     }
     h1, h2, h3, h4 {
         font-family: 'Playfair Display', serif;
@@ -91,6 +97,10 @@ st.markdown(
     }
     header[data-testid="stHeader"] {
         background: transparent !important;
+    }
+    /* Hide Streamlit's default top decoration bar */
+    div[data-testid="stDecoration"] {
+        display: none;
     }
 
     /* ── Reduce Streamlit's excessive padding ────────── */
