@@ -408,6 +408,7 @@ st.markdown(
     }
 
     /* ── Caption / footer ───────────────────────────── */
+    
     .stCaption, .stMarkdown small, div[data-testid="stCaptionContainer"] {
         color: var(--text-muted) !important;
     }
