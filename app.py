@@ -55,6 +55,14 @@ st.markdown(
         font-family: 'DM Sans', sans-serif;
         color: var(--text-main);
     }
+    html, body {
+        height: 100%;
+        overflow-y: auto;
+    }
+    div[data-testid="stAppViewContainer"],
+    section.main {
+        overflow-y: auto;
+    }
     h1, h2, h3, h4 {
         font-family: 'Playfair Display', serif;
         letter-spacing: -0.01em;
